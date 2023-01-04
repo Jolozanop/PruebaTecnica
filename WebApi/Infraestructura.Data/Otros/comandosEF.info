@@ -1,0 +1,2 @@
+﻿dotnet ef migrations add Inicial --context ContextoBD --output-dir MigracionesEF --project ../Infraestructura.Data/Infraestructura.Data.csproj
+dotnet ef migrations remove --context ContextoBD --project ../Infraestructura.Data/Infraestructura.Data.csproj

@@ -1,0 +1,36 @@
+2022-12-26 22:33:29.697 -05:00 [INF] Entity Framework Core 6.0.12 initialized 'ContextoBD' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.12' with options: None
+2022-12-26 22:33:30.313 -05:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-12-26 22:33:30.409 -05:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-12-26 22:33:30.417 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-12-26 22:33:30.427 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-12-26 22:33:30.481 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-12-26 22:33:30.517 -05:00 [INF] No migrations were applied. The database is already up to date.
+2022-12-26 22:33:30.787 -05:00 [INF] Now listening on: https://localhost:7038
+2022-12-26 22:33:30.790 -05:00 [INF] Now listening on: http://localhost:5001
+2022-12-26 22:33:30.799 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-26 22:33:30.801 -05:00 [INF] Hosting environment: Development
+2022-12-26 22:33:30.803 -05:00 [INF] Content root path: C:\Users\Home\source\repos\WebApi\Presentacion.ApiREST\
+2022-12-26 22:33:31.607 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - -
+2022-12-26 22:33:31.835 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - - - 200 - text/html;charset=utf-8 236.2896ms
+2022-12-26 22:33:31.936 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - -
+2022-12-26 22:33:31.949 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.1153ms
+2022-12-26 22:33:32.095 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - -
+2022-12-26 22:33:32.340 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.1932ms
+2022-12-26 22:33:37.203 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7038/productos/99 - -
+2022-12-26 22:33:37.222 -05:00 [INF] Executing endpoint 'HTTP: GET /productos/{id} => GetProductosById'
+2022-12-26 22:33:37.232 -05:00 [INF] Consultar producto por ID 99
+2022-12-26 22:33:37.241 -05:00 [INF] Entity Framework Core 6.0.12 initialized 'ContextoBD' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.12' with options: None
+2022-12-26 22:33:37.942 -05:00 [INF] Executed DbCommand (58ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[IdProductoPk], [p].[CategoriaIdCategoriaPk], [p].[Descripcion], [p].[Estado], [p].[FechaRegistro], [p].[IdCategoriaFk], [p].[ImagenUrl], [p].[Nombre]
+FROM [Producto] AS [p]
+WHERE [p].[IdProductoPk] = @__p_0
+2022-12-26 22:33:37.963 -05:00 [INF] Executing result with status code '404'.
+2022-12-26 22:33:37.965 -05:00 [INF] Executed endpoint 'HTTP: GET /productos/{id} => GetProductosById'
+2022-12-26 22:33:37.974 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7038/productos/99 - - - 404 0 - 770.6291ms
